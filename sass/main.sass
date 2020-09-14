@@ -1,0 +1,1718 @@
+@font-face
+	font-family: "ib-sans"
+	src : url("../fonts/IBMPlexSans-Regular.ttf");
+@font-face
+	font-family: "ib-light"
+	src : url("../fonts/IBMPlexSans-Light.ttf");
+@font-face
+	font-family: "ib-bold"
+	src : url("../fonts/IBMPlexSans-Bold.ttf");
+@font-face
+	font-family: "ib-medium"
+	src : url("../fonts/IBMPlexSans-Medium.ttf");
+@font-face
+	font-family: "ib-sb"
+	src : url("../fonts/IBMPlexSans-SemiBold.ttf");
+@font-face
+	font-family: "op-sans"
+	src : url("../fonts/OpenSans-SemiBold.ttf");
+$orange: #f5a146;
+$grey: #ececeb;
+$purple: #746c97
+$dusk: #5e577c
+$gwhite: #f8f8f8
+$dark: #321f38
+*
+	margin: 0
+	padding: 0
+	font-size: 14px
+	font-family: ib-sans
+body
+	color: #333333
+	font-family: ib-sans
+	position: relative
+
+a
+	display: inline-block
+	text-decoration: none
+.success
+	display: none
+	width: 300px
+	height: 100px
+	position: fixed
+	align-items: center;
+	justify-content: center;
+	left: 50%
+	top: 50%
+	background: #fff
+	text-align: center
+	font-family: ib-sb
+	&.active
+		display: flex
+		z-index: 9999
+	img
+		padding-right: 15px
+.head_logo
+	float: left
+.clb
+	clear: both
+
+.header
+	position: relative
+	height: 100vh
+	background-image: url(../img/header_bg.png)
+	background-size: cover
+	min-height: 500px
+	.nav_menu
+
+		position: fixed
+		top: 0
+		right: 0
+		width: 485px
+		height: 100vh
+		background: #000
+		z-index: 999
+		overflow-y: auto
+		ul
+			padding-top: 97px
+			margin-left: 120px
+			text-align: left
+			li
+				text-align: left
+				list-style: none
+				font-size: 15px
+				color: $gwhite
+				padding-bottom: 32px
+				&.active
+					color: $orange
+			a
+				color: inherit
+	.close
+		margin-right: 112px
+		cursor: pointer
+		opacity: 0.8
+		padding-top: 30px
+		float: right
+		&:hover
+			opacity: 1
+	.headline
+		max-width: 1120px
+		margin: auto
+		padding-top: 16px
+	.menu_butt
+		float: right
+		display: inline-block
+		margin-top: 8px
+.enroll_butt
+		float: right
+		display: inline-block
+		font-size: 14px
+		padding: 5px 13px 5px 15px
+		color: #fff
+		background: $orange
+		border-radius: 3px;
+		margin-top: 8px
+		margin-right: 41px
+		cursor: pointer
+		&:hover
+			background: $orange !important
+		&:active
+			background: #e69032 !important
+		
+.downl
+	&:hover
+		background: $orange !important
+	&:active
+			background: #e69032 !important
+			border-color: #e69032 !important
+
+.downl:hover img
+	filter: brightness(0) invert(1);
+.company
+	margin-top: 128px
+	margin-bottom: 64px
+	color: #fff
+	h1
+		font-size: 32px
+		font-family: ib-bold
+	p
+		font-size: 16px
+		margin-top: 24px
+		padding: 0
+.downl
+	padding: 11px 24px 9px 16px
+	border-radius: 3px;
+	border: solid 1.5px #f5a146;
+	line-height: 24px
+	color: #fff
+	img
+		float: left
+		padding-right: 16px
+.time_table
+	margin-top: 16px
+	margin-bottom: 35px
+	font-family: ib-sb
+	span
+		line-height: 2.4
+		display: block
+		color: $grey
+		position: relative
+		padding-bottom: 10px
+		text-transform: uppercase
+		font-size: 10px
+		opacity: 0.7;
+		font-weight: 600
+		&:after
+			position: absolute
+			content: ''
+			width: 32px
+			height: 2px
+			background-color: $grey
+			bottom: 9px
+			left: 0
+	p
+		margin-top: 16px
+		color: #fff
+	img
+		padding-right: 16px
+		padding-top: 16px
+	.row
+		&:first-of-type
+			margin-bottom: 56px
+.header_scroll
+	display: block
+	margin-top: auto
+	position: absolute
+	bottom: 0
+	a
+		margin-bottom: 16px
+		font-size: 15px
+		color: #fff
+	span
+
+		display: block
+		height: 56px
+		border-left: 2px solid rgba(236, 236, 235, 0.55);
+#partners
+
+	padding-bottom: 80px
+	position: relative
+	.triangle_partners
+		position: absolute
+		right: 0
+		top: 35px
+		width: 0;
+		height: 0;
+		border-top: 201px solid transparent;
+		border-right: 199px solid rgba(237, 235, 245, 0.21)
+		border-bottom: 201px solid transparent;
+	p
+		line-height: 1.57
+		padding-right: 24px
+		span
+			display: inline-block
+			font-weight: bold
+.section_headline
+	margin: auto
+	font-family: ib-bold
+	h2
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		text-align: center
+		padding: 17px 0 18px 0
+		background: $purple
+		color: #fff
+		font-family: ib-bold
+		box-shadow: 2px 37px 63px -19px rgba(116, 108, 151, 0.76)
+
+.partners_head
+	padding-top: 128px
+	display: block
+	border-left: 3px solid #f6f6f9
+	margin-bottom: 88px
+
+.like_h
+	text-align: center
+	text-transform: uppercase
+	color: rgba(116, 108, 151, 0.74)
+	letter-spacing: 0.9px;
+	position: relative
+	margin-bottom: 46px
+	font-family: ib-medium
+	&:after
+		position: absolute
+		content: url(../img/arrow-down.svg)
+		left: 49.5%
+		bottom: -16px
+.partner_logo
+	img
+		float: left
+		padding-right: 40px
+		padding-bottom: 63px
+	.ure
+		padding-bottom: 114px
+	.like_h1
+		font-family: ib-bold
+		text-transform: uppercase
+		padding-bottom: 8px
+		font-size: 18px
+		display: block
+		line-height: 1.11
+	.like_h2
+		font-size: 16px
+		color: $purple
+		display: block
+		padding-bottom: 24px
+		font-family: ib-sb
+		line-height: 1.25
+
+
+#audience
+	background: url(../img/stroke.svg) no-repeat left top
+	padding-bottom: 69px
+	
+	h3
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		text-align: center
+		padding: 17px 0 18px 0
+		background: $purple
+		color: #fff
+		max-width: 728px
+		margin: auto
+		font-family: ib-bold
+		box-shadow: 2px 37px 63px -19px rgba(116, 108, 151, 0.76)
+.head
+		padding-top: 50px
+		padding-bottom: 88px
+		display: block
+		
+.list
+	margin-left: 66px
+
+	&:last-of-type
+		margin-left: 29px
+		p
+			padding-right: 36px
+
+	img
+		float: left
+		margin-right: 30px
+		width: 68px
+		height: 68px
+	p
+		clear: both
+		line-height: 1.57
+		overflow: hidden
+		padding: 0 0px 64px 0px
+		display: flex
+		align-items: center
+		padding-right: 20px
+.pad
+	padding: 0
+	padding-right: 0 !important
+#task
+
+	
+	position: relative
+	.triangle_task
+		position: absolute
+		left: 0
+		bottom: -45%
+		width: 0;
+		height: 0;
+		border-top: 600px solid transparent;
+		border-left: 540px solid rgba(237, 235, 245, 0.21);
+		border-bottom: 630px solid transparent;
+		
+	.container
+		background: $gwhite
+
+	h4
+		position: relative
+		text-align: center
+		padding: 28px 0
+		font-size: 24px
+		color: #fff
+		background: $purple
+		font-family: ib-bold
+		&:after
+			content: '';
+			position: absolute;
+			right: 48%;
+			bottom: -54px;
+			border: 24px solid transparent;
+			border-top: 30px solid $purple;
+	p
+		display: flex
+		align-items: center
+		font-size: 20px
+		color: $dusk
+		font-family: ib-bold
+		padding: 55px 0 43px 36px
+		img
+			float: left
+			padding-right: 22.5px
+	ul
+		padding: 0 63px 0 76px
+		li
+			list-style: none
+			position: relative
+			line-height: 1.57
+			padding-bottom: 24px
+			&:last-of-type
+				padding-bottom: 78px
+			span
+				float: left
+				width: 8px
+				height: 3px
+				background: #746c97
+				display: inline-block
+				margin: 10px 12px 0 0
+	.border
+		border-right: 3px solid rgba(116, 108, 151, 0.15)
+		p
+			padding: 89px 0 74px 66px
+#benefits
+	position: relative
+	overflow: hidden
+	padding-top: 128px
+	.benefit_line
+		position: absolute
+		right: -15%
+		bottom: 42%
+		width: 160%
+		border-top: 345px solid #FBFBFD
+		transform: rotate(17deg)
+.ben_head
+	display: block
+	h5
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		text-align: center
+		padding: 17px 0 18px 0
+		background: $purple
+		color: #fff
+		font-family: ib-bold
+		box-shadow: 2px 37px 63px -19px rgba(116, 108, 151, 0.76);
+.done
+	margin-top: 88px
+	img
+		display: block
+		padding-bottom: 16px
+	p
+		padding-bottom: 48px
+		opacity: 0.8;
+		line-height: 1.57
+.workers
+	p
+		padding-bottom: 41px
+		max-width: 203px
+		margin: auto
+
+#team
+	overflow: hidden
+	position: relative
+	background: url(../img/stroke.svg) no-repeat left top
+	.line_bg
+		position: absolute
+		right: -15%
+		bottom: 29%
+		width: 160%
+		border-top: 345px solid #FBFBFD
+		transform: rotate(22deg)
+	.like_h
+		padding-top: 22px
+	img
+		height: 307px
+		max-width: 300px
+		width: 100%
+		object-fit: cover
+	.row
+		justify-content: center
+	h4
+		text-align: center
+		font-size: 20px
+		text-transform: uppercase
+		text-align: center
+		padding: 17px 0 18px 0
+		background: $purple
+		color: #fff
+		max-width: 728px
+		margin: auto
+		font-family: ib-bold
+		box-shadow: 2px 37px 63px -19px rgba(116, 108, 151, 0.76);
+.team_face
+	position: relative
+	overflow: hidden
+	flex-basis: 264px;
+	padding: 0 22px 0 0px
+	margin-bottom: 69px
+
+
+	&:hover
+		.team_descr
+			top: 0
+			visibility: visible
+
+	span
+		position: absolute
+		display: inline-block
+		padding: 10px
+		font-size: 16px
+		line-height: 1.5
+		background: rgba(248, 248, 248, 0.85)
+		bottom: 25px
+		left: 0
+		margin-right: 22px
+	
+
+.team_descr
+	overflow-y: auto
+	transition: all 0.5s ease-out 
+	position: absolute !important
+	visibility: hidden
+	top: 320px
+	height: 100%
+	max-width: 300px
+	color: #fff
+	background: rgba(116, 108, 151, 0.95)
+	padding: 24px 13px 21px 18px
+	margin-right: 22px
+	span
+		display: block
+		position: initial
+		background: none
+		padding: 0
+
+	.about
+		color: #f5a146
+		font-size: 11px
+		letter-spacing: 0.4px
+		text-transform: uppercase
+		padding-bottom: 10px
+	.name
+		font-size: 18px
+		font-weight: bold
+		padding-bottom: 16px
+		font-family: ib-bold
+	p
+		line-height: 1.57
+		padding-bottom: 22px
+
+
+
+#format
+	padding: 59px 0 128px 0
+	position: relative
+	.format_triangle
+		position: absolute
+		width: 0
+		height: 0;
+		left: 0
+		top: -23%
+		border-top: 182.5px solid transparent;
+		border-left: 180px solid rgba(237, 235, 245, 0.21);
+		border-bottom: 182.5px solid transparent;
+.format_row
+	margin-top: 104px
+.percent
+	position: relative
+	font-size: 80px
+	color: #f5a146;
+	font-family: op-sans
+	letter-spacing: 0.5px;
+	font-weight: 600
+	padding-left: 37px
+	&:first-of-type
+		margin-top: 21px	
+	&.purple
+		color: $purple
+	img
+		position: absolute
+		left: 0
+		top: -24px
+	
+
+.p_about
+	padding: 0 147px 50px 128px
+	&:last-of-type
+		padding: 0 77px 0 128px
+
+.when
+	background: $purple
+	padding: 0
+	color: #fff
+	position: relative
+	.headline
+		margin-top: 15px
+		line-height: 1.4;
+		letter-spacing: 1px;
+		font-size: 20px
+		background: $dusk
+		font-family: ib-bold
+		padding: 32px 117px 30px 38px
+		border-bottom: 2px solid rgba(255, 255, 255, 0.3)
+	.triangle
+		position: absolute
+		top: 0
+		right: 0
+		width: 0;
+		height: 0;
+		border-top: 113px solid white; 
+		border-left: 85px solid transparent;
+.when_body
+	padding: 53px 99px 99px 40px
+	background: url(../img/contract.svg) no-repeat 93% 75%
+	.enroll_butt
+		float: none
+		margin: 0
+		margin-top: 58px
+		padding: 11px 60px 13px 58px
+		line-height: 1.57
+	
+	.time
+		display: block
+		font-family: ib-bold
+		letter-spacing: 1px;
+		font-size: 20px
+		padding-bottom: 16px
+		
+	.discription
+		line-height: 1.5;
+		font-size: 16px
+		padding-right: 95px
+		&:first-of-type
+			margin-bottom: 40px
+			padding-right: 0
+#programm
+	background: url(../img/stil.png) no-repeat top
+	background-size: cover
+	padding-bottom: 128px
+	.row
+		justify-items: center
+	.explain
+		padding: 60px 0 16px 0
+		font-family: ib-sb
+		color: $dusk
+		font-size: 16px
+	tr
+		border-bottom: solid 2px rgba(116, 108, 151, 0.2)
+		&:first-of-type
+			td 
+				padding-top: 29px
+				&:first-of-type
+					img
+						top: 44% 
+		td
+			line-height: 1.57
+			padding: 18px 100px 16px 33px
+			font-size: 14px
+			
+			background: #F8F8F8
+			&:first-of-type
+				width: 20%
+				padding: 15px 18px 14px 37px
+				background: #F2F2F2
+				font-size: 15px
+				color: $dusk
+				font-family: ib-sb
+				position: relative
+				border-right: solid 2px rgba(116, 108, 151, 0.2)
+				background-clip: padding-box !important
+
+				img
+					position: absolute
+					top: 41%
+					left: 15px
+
+				&.purple_bg
+					background: #edebf5
+		&:last-of-type
+			border-bottom: 0
+			text-align: center
+			td
+				padding-left: 0
+				padding-right: 0
+				font-family: ib-sb
+				&:first-of-type
+					background: #F8F8F8
+					padding: 18px 0 17px 0
+
+				&:last-of-type
+					font-size: 15px
+					color: $dusk
+					font-family: ib-sb
+
+	.special
+		img
+			top: 46% !important
+	table
+		overflow: hidden
+		border-collapse: collapse
+		width: 100%
+		margin-bottom: 63px
+		border-radius: 2px
+	.tables
+		padding: 0 76px 0 76px
+		margin: auto
+	.table1
+		border: 1px solid #ececeb
+		tr
+			border: solid 2px rgba(116, 108, 151, 0.2) !important
+			&:first-of-type
+				td 
+					padding-top: 25px
+					&:first-of-type
+						img
+							top: 50% 
+	.table3
+		box-shadow: 0px 75px 113px -69px rgba(116, 108, 151, 0.76)
+		margin-bottom: 0
+		tr
+			td
+				&:first-of-type
+					padding-bottom: 16px
+			
+.table_h
+	padding: 18px 43px 18px 42px
+	font-size: 20px
+	font-family: ib-sb
+	text-align: center
+	background-color: $purple
+	color: #fff
+	position: relative
+	margin-bottom: 18px
+	border-radius: 2px
+	&:after
+			content: '';
+			position: absolute;
+			left: 6%;
+			bottom: -28px;
+			border: 15px solid transparent;
+			border-top: 13px solid $purple;
+	span
+		font-size: 20px
+		font-family: ib-sb
+.task_wrap
+	box-shadow: 0px 75px 113px -69px rgba(116, 108, 151, 0.76)
+	position: relative
+	background: $gwhite
+	z-index: 999
+	.task_dots
+		position: absolute
+		right: calc(100% + 2px)
+		top: -68%
+#result
+
+.checked
+	position: relative
+	margin-top: 130px
+	background: $gwhite
+	.check_tab
+		position: absolute
+		right: 0
+		bottom: 100%
+	div
+		padding: 0
+	
+	p
+		max-width: 615px
+		padding-bottom: 32px
+		padding-top: 50px
+		margin-left: 95px
+		position: relative
+		font-size: 16px
+		line-height: 1.5
+		img
+			position: absolute
+			top: 50%
+			left: -99px
+			width: 37px
+			height: 28.5px
+		span
+			display: block
+			width: 0;
+			height: 0;
+			border-top: 47px solid transparent;
+			border-right: 45px solid $gwhite;
+			border-bottom: 47px solid transparent;
+			position: absolute
+			left: -140px
+			top: 25%
+		&:first-of-type
+			padding-top: 58px
+			span
+				top: 29%
+.imaged
+	font-size: 0
+	img
+		width: 100%
+		height: 100%
+		max-height: 495px
+		object-fit: cover
+.like_tabs
+	position: absolute
+	top: 100%
+	left: 0
+
+.left_triangle
+	position: relative
+	.triangle_cost
+		position: absolute
+		width: 0;
+		height: 0;
+		right: 0
+		bottom: 0
+		border-top: 600px solid transparent;
+		border-right: 620px solid #fbfbfd;
+		border-bottom: 600px solid transparent;
+#cost
+	margin-top: 160px
+	margin-right: 10px
+
+	.container-fluid
+		background: url(../img/coding.png) no-repeat
+		background-size: cover
+		position: relative
+	.cost_tab
+		position: absolute
+		top: 100%
+		left: 0
+
+	.triangle
+		position: absolute
+		top: 0
+		right: 0
+		width: 0;
+		height: 0;
+		border-top: 65px solid white; 
+		border-left: 260px solid transparent;
+.cost_text
+	padding: 61px 0 79px 0
+
+	color: #fff
+	margin-top: 88px
+
+	p
+		position: relative
+		font-size: 18px
+		padding-left: 36px
+		line-height: 1.22
+		
+		&:not(:last-of-type)
+			margin-bottom: 31px
+		b
+			font-family: ib-sb
+			font-size: 18px
+			
+		span
+			font-family: ib-bold
+			font-size: 28px
+			padding-left: 14px
+			line-height: 1.36
+			letter-spacing: 1px
+	
+	.special
+			display: inline-block
+			vertical-align: top
+			text-align: left
+			padding-top: 6px
+			font-size: 18px
+			margin-bottom: 23px
+
+			img
+				top: 11px
+			
+	span.special
+		line-height: 1.22
+		font-size: 28px
+		font-family: ib-bold
+		padding-top: 0
+		padding-left: 16px
+		line-height: 1.36
+		letter-spacing: 1px
+	img
+		position: absolute
+		top: 14px
+		left: 0
+.sm_left_triangle
+	position: relative
+	.sm_triangle
+		position: absolute
+		width: 0;
+		height: 0;
+		border-top: 600px solid transparent;
+		border-right: 700px solid #FBFBFD;
+		border-bottom: 600px solid transparent;
+		top: 20%
+		right: 0
+		display: none
+
+#included
+	padding: 100px 0 128px 0
+	position: relative
+	overflow: hidden
+	
+	.like_h5
+		display: block
+		padding-bottom: 41px
+		text-transform: uppercase
+		font-size: 28px
+		font-family: ib-bold
+		color: $purple
+		letter-spacing: 1.4px
+	p
+		font-size: 16px
+		line-height: 1.5
+		padding-bottom: 8px
+	.not_in
+		display: block
+		padding-top: 48px
+		font-size: 16px
+		color: $purple
+		font-family: ib-sb
+		line-height: 1.38
+	.downl
+		padding: 11px 51px 12px 16px
+		border: 0
+		background: $orange
+		color: #fff
+		margin-top: 40px
+		img
+			padding-right: 35px
+#become
+	padding: 8px 0 102px 0
+	background: url(../img/stroke.svg) no-repeat left 21%
+.stages
+	align-items: baseline
+	justify-content: space-around;
+	text-align: center
+	padding: 0 45px 0 75px
+	line-height: 1.5
+	padding-top: 88px
+	position: relative
+	z-index: 99
+	img
+		width: 62px
+
+		
+.step
+	p
+		padding-top: 24px
+		max-width: 242px
+		color: $dark
+		font-size: 16px
+	img
+		width: 72px
+		height: 72px
+.sp
+	margin-right: -46px
+
+#enroll
+	text-align: center
+	display: block
+	background: url(../img/become.png)
+	background-size: cover
+	padding: 66px 0 88px 0
+	.like_h5
+		padding-bottom: 32px
+		line-height: 1.57
+		font-size: 28px
+		font-family: ib-bold
+		color: #fff
+	.enroll_butt
+		float: none
+		padding: 12px 39px 13px 38px
+		line-height: 1.57
+#footer
+	padding: 88px 0 80px 0 
+	ul
+		list-style: none
+		li
+			font-size: 14px
+			line-height: 1.57
+			&:not(:last-of-type)
+				padding-bottom: 12px
+			a
+				color: #333
+.contact
+	text-align: right
+	span
+		display: block
+		font-size: 16px
+		line-height: 1.5
+	p
+		font-family: ib-medium
+		line-height: 1.33
+		font-size: 17px
+		padding-bottom: 16px
+	a
+		padding-top: 16px
+		font-size: 16px
+		color: #4a90e2
+		line-height: 1.5
+		font-family: ib-sb
+.mar_left
+	ul
+		margin-left: 29px
+.copyright
+	text-align: center
+	font-size: 12px
+	font-family: ib-light
+	padding-bottom: 48px
+
+.nav_menu
+	display: none
+.sm-table
+	display: none
+.teachers
+		display: none
+.mess
+	position: relative
+	display: inline-block
+	padding: 28px 99px 33px 0
+	background: #edebf5
+	min-width: 665px
+	margin-top: -80px
+	padding-left: calc(49% - 545px)
+	p
+		font-size: 16px
+		line-height: 1.5
+	span
+		font-size: 16px
+		font-family: ib-bold
+	.triangle
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 0;
+		height: 0;
+		border-top: 133px solid white;
+		border-left: 46px solid transparent;
+	.sp
+		position: absolute
+		top: -139%
+		left: 0
+		margin-right: 0
+.p_about
+	position: relative
+	z-index: 99
+.percent
+	img
+		z-index: 99
+.form_input
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	position: relative;
+	padding-bottom: 24px
+
+.form_input label
+	display: inline-block;
+
+.form_input input
+	padding: 7px  16px 7px 16px
+	width: 263px;
+	outline: none;
+	border: 1px solid transparent;
+
+.form_input input.wrong 
+	border: 1px solid rgba(222, 77, 95, 0.5) !important;
+	border-radius: 3px;
+
+.form_input .info 
+	display: inline-block;
+	position: absolute;
+	top: 10%;
+	right: -8%;
+
+.info.error 
+	width: 20px;
+	height: 20px;
+
+	border: 0;
+
+
+.info.error span 
+	visibility: hidden;
+	font-size: 14px;
+	color: #333;
+	font-style: italic;
+
+
+.info.error:hover span 
+	visibility: visible;
+
+
+textarea 
+	resize: none;
+	width: 263px;
+	height: 88px;
+
+
+fieldset 
+	padding: 56px 0 48px 0
+	border: 0
+#registration
+	overflow-y: auto
+	display: none
+	max-width: 626px
+	height: 100vh
+	padding-left: 55px
+	padding-right: 155px
+	position: fixed
+	right: 0
+	z-index: 9999
+	background-color: #fff
+	button
+		display: inline-block;
+		padding: 7px 52px 7px 52px;
+		color: #fff;
+		background: #f5a146;
+		border-radius: 3px;
+		border: none
+		outline: none
+		cursor: pointer
+
+	input
+		&::placeholder  
+			color: rgba(51, 51, 51, 0.25);
+			line-height: 1.6;
+			font-size: 13px;
+	p
+
+	.like_h1
+		margin-top: 22px
+		font-size: 22px
+		color: $dark
+		font-family: ib-sb
+		padding-bottom: 24px
+	.under
+		color: rgba(50, 31, 56, 0.75)
+		line-height: 1.46
+		font-size: 13px
+	.contact2
+		margin-left: 35%
+		p
+			font-size: 11px
+			padding-left: 0
+		button
+			margin-top: 48px
+			margin-bottom: 16px
+	.close2
+		margin-left: 100%;
+		cursor: pointer;
+		opacity: 0.65;
+		padding-top: 30px;
+		&:hover
+			opacity: 1
+	.error_msg
+		margin-bottom: 16px
+		color: red
+		font-size: 15px
+		font-family: ib-sb
+#email 
+	border: 1px solid rgba(116, 108, 151, 0.8);
+
+#fullphone
+
+	border: 1px solid rgba(116, 108, 151, 0.5);
+
+#company 
+	border: 1px solid rgba(116, 108, 151, 0.4);
+
+#fullname, #about 
+	border: 1px solid rgba(116, 108, 151, 0.26);
+
+.p_likeh1 
+
+.slick-slide
+	max-width: 400px
+	outline: none
+@media (max-width: 1366px)
+	.company
+		margin-top: 7vh
+		margin-bottom: 10vh
+		p
+			margin-top: 5vh
+	.time_table
+		p
+			margin-top: 1vh
+		.row
+			&:first-of-type
+				margin-bottom: 6vh
+		img
+			padding-top: 1vh
+	.mess
+		display: none
+@media (max-width: 1139px)
+	.header
+		padding-left: 15px
+		padding-right: 15px
+	.company, .present
+		margin-left: 0
+	.checked
+		img
+			max-height: 518px
+@media (max-width: 1201px)
+	.list
+		margin-left: 0
+	.partners_head
+		border-left: 0
+	#task
+		h4
+			&:after
+				right: 47.7%
+@media (max-width: 995px)
+	.sm_fluid
+		max-width: 100%
+	.table_h
+		b
+			display: none
+@media (max-width: 626px)
+	#registration
+		width: 100%
+		padding: 0 
+		overflow-x: hidden
+		fieldset
+			width: 100%
+		.form_input
+			label
+				margin-left: 20px
+			
+			input
+				margin-right: 99px
+			textarea
+				margin-right: 50px
+			.info
+				right: 12%
+				span
+					font-size: 12px
+
+		.like_h1
+			margin-left: 20px
+		.under
+			margin-left: 20px
+		.contact2
+			margin-left: 42%
+		.close2
+			margin-left: calc(100% - 50px)
+@media (max-width: 531px)
+	#registration
+		
+		.form_input
+			label
+				margin-left: 20px
+			
+			input
+				
+			textarea
+				margin-right: 50px
+			.info
+				right: 12%
+				span
+					font-size: 12px
+
+		.like_h1
+			margin-left: 20px
+		.under
+			margin-left: 20px
+
+@media (max-width: 582px)
+	#registration
+		fieldset
+			
+			input
+				width: 55%
+			textarea
+				width: 55%
+		.contact2
+			margin-left: 33%
+
+	.table3
+		box-shadow: none
+	.header_scroll
+		padding-left: 15px
+	.nav_menu
+		width: 100%
+	#programm
+		table
+			margin-bottom: 0
+			tr
+				&:last-of-type
+					display: none 
+	.sm-table
+		display: flex
+		justify-content: space-around
+		align-items: center
+		font-size: 15px
+		color: $dusk
+		background: $gwhite
+		margin-bottom: 56px;
+		p
+			display: inline-block
+			padding: 40px 20px 37px 0
+			border-right: 0
+			line-height: 1.57	
+			font-family: ib-sb
+		span
+			line-height: 1.57
+			font-family: ib-sb
+			max-width: 132px	
+@media (max-width: 475px)
+	.header .close
+		margin-right: 60px
+	.nav_menu
+		padding-left: 60px
+@media (max-width: 750px)
+	.slick-slide
+
+		margin-right: 40px
+	.team_face
+
+		span
+			top: 243px
+			bottom: initial
+	.team_descr
+		position: initial !important
+		visibility: visible
+		width: 100%
+		color: $dark
+		padding: 32px 4px
+		background: none
+	.sm_fluid
+		max-width: 100%
+	.teachers
+		position: relative
+		display: block
+		text-align: center
+		letter-spacing: 0.9px;
+		color: $dusk
+		font-family: ib-bold
+		text-transform: uppercase
+		padding-top: 16px
+		padding-bottom: 32px
+	#team
+		.row
+			margin-bottom: 0
+@media (max-width: 995px)
+	.check_tab
+		display: none
+	.like_tabs
+		display: none
+	.cost_tab
+		display: none
+	.triangle_cost
+		display: none
+	.triangle_task
+		display: none
+	.no_pad
+		padding-left: 0
+		padding-right: 0
+	.time_table 
+		display: none
+	.imaged
+		display: none
+	.format_triangle
+		display: none
+	.sm_left_triangle
+		.sm_triangle
+			display: initial
+	.table_h
+		span
+			display: block
+			font-family: ib-sans
+			font-size: 20px
+			padding-bottom: 8px
+		&:after
+			left: 12%
+	#become
+		background: none
+		.ben_head
+			margin-bottom: 50px
+	.stages
+		padding: 0
+		flex-direction: column
+		align-items: center
+		img
+			transform: rotate(90deg);
+		.margin
+
+		.sp
+			margin: 0
+		.step
+			img
+				transform: none
+				margin-top: 60px
+			p
+				padding-bottom: 30px
+				margin-bottom: 30px
+	.like_h
+		&:after
+			left: 48.5%
+	.ben_head
+		h5
+			font-size: 18px
+			
+	.copyright
+		display: none
+	#footer
+		padding: 64px 0 72px 0
+		text-align: center
+		.contact
+			text-align: center
+		ul
+			margin: 0 !important
+			li
+				
+				line-height: 1.22
+				padding-bottom: 32px !important
+				a
+					font-size: 18px
+	.foot_menu
+		order: 1
+	.mar_left
+		order: 2
+	.contact
+		order: 3
+		p
+			padding-top: 24px
+			padding-bottom: 24px
+			font-size: 20px
+		span
+			font-size: 18px
+			line-height: 1.33
+			padding-bottom: 8px
+		a
+			padding-top: 8px
+			margin-bottom: 56px
+	.foot_logo
+		order: 4
+	.header
+		z-index: 99
+		padding-top: 15px
+		.enroll_butt
+			padding: 7px 19px
+			margin-right: 10px
+			span
+				display: none
+		.head_logo
+			img
+				width: 92px
+		.headline
+			padding: 0 24px 0 24px
+	.company
+		margin-top: 97px
+		margin-bottom: 56px
+		h1
+			font-size: 21px
+		p
+			margin-top: 16px
+	.header_scroll
+		padding-left: 15px
+
+
+
+	#partners
+		padding-bottom: 14px
+		.triangle_partners
+			top: -36px
+
+	.partners_head
+		padding-top: 56px
+		margin-bottom: 56px
+	.partner_logo
+		img
+			padding-right: 24px
+			padding-bottom: 16px
+			max-width: 150px
+		.clb-sm
+			clear: both
+		.ure
+			padding-right: 16px
+			padding-bottom: 24px
+		.like_h2
+			padding-bottom: 0
+		&:last-of-type
+			margin-top: 40px
+			.like_h2
+				padding-bottom: 0
+	#partners
+		p
+			margin-bottom: 24px
+
+	#audience
+		background-position: left 2%
+		.head
+			padding-bottom: 56px
+		h3
+			padding-left: 53px
+			padding-right: 53px
+		.list
+			margin: 0
+			p
+				padding: 0
+				margin-bottom: 41px
+				margin-right: 9px
+			img
+				width: 48px
+				height: 50px
+				padding-right: 0
+				margin-right: 24px
+				margin-left: 9px
+	#task
+		margin-bottom: 0
+		padding-bottom: 88px
+		margin-right: 15px
+		margin-left: 15px
+		.container
+			padding-bottom: 20px
+		h4
+			font-size: 18px
+			&:after
+				bottom: -43px
+				border: 22px solid transparent;
+				border-top: 21px solid #746c97;
+		p
+			padding: 40px 37px 24px 37px
+			justify-content: center;
+			font-size: 19px
+			img
+				padding-right: 12px
+		.border
+			border-right: 0
+			border-bottom: 2px solid rgba(116, 108, 151, 0.15);
+			p
+				padding: 51px 0 24px 0
+				font-size: 20px
+		ul
+			padding: 0
+			li
+				padding-right: 19px
+				&:last-of-type
+					padding-bottom: 48px
+				
+				span
+					visibility: hidden;
+					margin: 0
+					width: 3px
+		.task_wrap
+			box-shadow: none
+			.task_dots
+				display: none
+
+
+	.done
+		margin-top: 72px
+		text-align: center
+		img
+			margin: auto
+		p
+			padding: 0 38px 48px 38px	
+	.workers
+		
+		img
+			display: none
+		p
+			padding: 0
+			padding-bottom: 48px
+			img
+				display: block
+	#team
+		background-position: left 2%
+		.head
+			padding-top: 40px
+			padding-bottom: 32px
+			margin-bottom: 0
+		.line_bg
+			display: none
+	
+	.slick-slide
+		
+		margin-left: 0px
+		opacity: 0.6
+		outline: none
+
+	.slick-active
+		opacity: 1
+
+	#programm 
+		.tables
+			padding: 0
+		
+	.slick-list
+		padding: 0 50px 0 35px !important
+		
+	#format
+		padding: 0 0 88px 0
+		margin-top: 56px
+		position: relative
+		.fifty_triangle
+			position: absolute
+			width: 0;
+			height: 0;
+			top: 0
+			right: 0
+			border-top: 236px solid transparent;
+			border-right: 240px solid rgba(237, 235, 245, 0.21)
+			border-bottom: 236px solid transparent;
+		.format_row
+			.headline
+				text-align: center
+	.fifty
+		padding-bottom: 80px
+		margin-left: 10px
+		margin-right: 10px
+		
+	.triangle
+		display: none
+	.when
+		.headline
+			padding-left: 55px
+			padding-right: 55px
+			font-size: 18px
+	.p_about
+		padding-right: 0 !important
+	.when_body
+		    background: url(../img/contract.svg) no-repeat 63% 35%;
+		    padding: 48px 30px 78px 29px
+		    .discription
+		    	padding-right: 21px !important
+		    	&:last-of-type
+		    		margin-bottom: 72px
+		    .enroll_butt
+		    	text-align: center
+		    	width: 100%
+		    	margin-right: 48px
+		    	margin-left: 48px
+		    	margin: auto
+
+	#programm 
+		background: none
+		padding-bottom: 32px
+		tr 
+			td
+				padding-right: 0
+				&:first-of-type
+					padding: 31px 6px 31px 15px
+					width: 25%
+					&:before
+						display: none
+	
+
+	.checked
+		padding-right: 15px
+		padding-left: 15px
+		text-align: center
+		background: #fff
+		margin-top: 0
+		position: relative
+		.check_triangle
+			position: absolute
+			width: 0;
+			height: 0;
+			right: 0
+			top: 30%
+			border-top: 355px solid transparent;
+			border-right: 360px solid rgba(237, 235, 245, 0.21);
+			border-bottom: 355px solid transparent;
+		p
+			margin: auto
+
+			padding-left: 5px
+			padding-right: 10px
+			span
+				display: none
+			img
+				display: block
+				position: initial
+				margin: auto
+				margin-bottom: 24px
+	.triangle_cost
+		display: none
+	#cost
+		margin-right: 0
+		margin-top: 56px
+		.container-fluid
+			background: url(../img/cost2.jpg) no-repeat
+			background-position: 50%
+			background-size: cover
+
+		.cost_tab
+			display: none
+		.cost_text
+			text-align: center
+			margin-top: 48px
+			.special
+				img
+					top: 11px
+			span
+				display: block
+				padding-left: 0 !important
+				padding-top: 16px
+				&.special
+					margin-bottom: 64px
+
+			img
+				top: 3px
+				left: 8px
+			p
+				display: inline-block
+				padding-left: 38px
+				padding-right: 38px
+				&:not(:last-of-type)
+					margin-bottom: 64px
+				&.special
+					margin-bottom: 0
+		.special
+			text-align: center
+
+
+	#included
+		padding-top: 63px
+		padding-bottom: 88px
+		.included_square
+			width: 135px
+			height: 135px
+			position: absolute
+			border: 16px solid rgba(237, 235, 245, 1)
+			transform: rotate(-315deg)
+			bottom: 41%
+			right: -13%
+		.like_h5
+			font-size: 27px
+		p
+			padding-left: 9px
+			padding-bottom: 24px
+		.not_in
+			text-align: center
+			margin-bottom: 48px
+		.downl
+			width: 100%
+			margin-left: 15px
+			margin-right: 15px
+			margin: auto
+			text-align: center
+	#become
+		padding-bottom: 88px
+	#enroll
+		padding: 72px 45px 72px 41px
+		background: url(../img/enroll2.jpg) no-repeat 90%
+		background-size: cover
+		.enroll_butt
+			margin-right: 0
+	#result
+		.ben_head
+			margin-bottom: 55px
+	#benefits
+		padding-top: 0
+		.benefit_line
+			right: -12%
+			bottom: 69%
+			width: 119%
+			border-top: 180px solid #FBFBFD;
+			transform: rotate(19deg);
